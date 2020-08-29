@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+@font-face {
+    font-family: "STARWARS";
+    src: url("http://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("embedded-opentype"), /* IE6-IE8 */
+         url("http://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff"), /* chrome firefox */
+         url("http://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS"); /* iOS 4.1- */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #AAA;
+    text-align: center;
+}
+
+#main {
+    margin: 2%;
+}
+
+#header {
+    margin: 5% 2%;
+}
+
+#header h1 {
+    font-family: "STARWARS", 'Press Start 2P', cursive;
+    color: yellow;
+    font-size: 350%;
+}
+
+#header p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dodgerblue;
+    font-size: 150%;
+    max-width: 100%;
+}
+
+@media (max-width: 400px) {
+    #header h1 {
+        font-size: 200%;
+    }
+    #header p {
+        font-size: 100%;
+    }
+}
+
+#aluno-form {
+    background-color: #111;
+    padding: 1%;
+    border-radius: 0.7%;
+    opacity: .8;
+}
+
+#aluno-image {
+    margin: 5px auto;
+}
+#image-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    margin: 10px;
+}
+#file {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    background-color: black;
+    background-image: url(https://scontent-gig2-1.cdninstagram.com/v/t51.2885-15/fr/e15/s1080x1080/58411124_400147540568036_2925032482217182901_n.jpg?_nc_ht=scontent-gig2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=VBXoA0gUUN4AX98iMZn&oh=b22f573c12e54a9437474012e49e688c&oe=5F730928);
+    background-size: cover;
+    border: 1px solid #222;
+
+}
+#aluno-image-path {
+    background-color: red;
+    width: 128px;
+    height: 128px;
+    opacity: 0;
+}
+
+#aluno-form label {
+    display: inline-block;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222;
+}
+
+#aluno-form #aluno input {
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: whitesmoke;
+    opacity: 1; /* Firefox */
+}
+
+#dob {
+    color: whitesmoke !important;
+    opacity: 15; /* Firefox */
+}
+
+#cor {
+    padding: 1px;
+    margin: 5px;
+}
+
+#fav-char optgroup {
+    background-color: #000;
+    border: none;
+}
+
+#fav-char option {
+    background-color: #000;
+    color: #AAA;
+    border: none;
+}
+
+#fav-char optgroup[label="Empire"] {
+    color: red;
+    border: none;
+}
+#fav-char optgroup[label="Republic"] {
+    color: dodgerblue;
+    border: none;
+}
+
+#sex {
+    color: #AAA;
+}
+
+#sex label[for="sex-title"] {
+    background-color: #222;
+    display: block;
+}
+
+#sex label {
+    background-color: transparent;
+    display: inline-block;
+    background-color: #000;
+}
+
+#eula {
+    color: #AAA;
+}
+
+#eula label[for="eula-title"] {
+    background-color: #222;
+    display: block;
+}
+
+#eula label {
+    background-color: transparent;
+    display: inline-block;
+    background-color: #000;
+}
+
+#user-feedback label[for="feedback-title"] {
+    background-color: #222;
+}
+
+#user-feedback label {
+    background-color: #000;
+}
+
+#user-feedback textarea {
+    background-color: #000;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #AAA;
+    padding: 10px;
+}
+
+#submit {
+    background-color: #000;
+    color: #AAA;
+    padding: 3%;
+    border: none;
+    border-left: solid yellow;
+    border-right: solid dodgerblue;
+    outline: none;
+}
+
+@keyframes fadeinout {
+    0% {
+        opacity: 1;
+        background-size: 0%;
+        background-position: 50%;
+        filter: blur(0.1px) hue-rotate(0deg);
+        background-blend-mode: color-burn;
+    }
+    100% {
+        opacity: 0;
+        background-size: 1000%;
+        background-position: 50%;
+        background-blend-mode: color-burn;
+        filter: blur(0.9px) hue-rotate(100deg);
+    }
+}
+
+#bg-animated {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: url('https://wallpapersafari.com/image/star-wars-space-wallpaper.jpg') repeat;
+    animation: fadeinout 90s cubic-bezier(0.095, 0.03, 0.815, 0.22) infinite normal;
+    z-index: -99999;
+}
