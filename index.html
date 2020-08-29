@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>| Serratec - Inscrições |</title>
+    </head>
+
+    <body>
+
+        <div id="bg-animated"></div>
+
+        <div id="header">
+                <h1 id="title">SERRATEC</h1>
+                <p id="description">Torne-se um padawan agora mesmo!</p>
+        </div>
+
+        <div id="main">
+
+            <form action="" id="aluno-form">
+                <div id="aluno-image">
+                    <div id="file">
+                        <input type="file" name="" id="aluno-image-path">
+                    </div>
+                    <div>
+                        <p id="image-title">Clique acima para selecionar imagem de perfil</p>
+                    </div>
+                    
+                </div>
+                
+                <div id="aluno">
+                        <label for="name" id="name-label">Nome:
+                            <input type="text" name="name" id="name" placeholder="Digite seu nome" required autocomplete="off"><br>
+                        </label>
+                        <label for="last-name" id="last-name-label">Sobrenome:
+                            <input type="text" name="last-name" id="last-name" placeholder="Digite seu sobrenome" required autocomplete="off"><br>
+                        </label>
+                        <label for="cpf" id="cpf-label">CPF:
+                            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required autocomplete="off"><br>
+                        </label>
+                        <label for="endereco" id="endereco-label">Endereço:
+                            <input type="text" name="endereco" id="endereco" placeholder="Digite seu endreço" required autocomplete="off"><br>
+                        </label>
+                        <label for="email" id="email-label">E-mail:
+                            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required autocomplete="off"><br>
+                        </label>
+                        <label for="number" id="idade-label">Idade:
+                            <input type="number" name="idade" id="idade" min="16" max="99" placeholder="Digite sua idade" required autocomplete="off"><br>
+                        </label>
+                        <label for="dob" id="dob-label">Data de Nascimento:
+                            <input type="date" name="dob" id="dob" required autocomplete="off"><br>
+                        </label>
+                        <label for="telefone" id="telefone-label">Telefone:
+                            <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone com DDD" required autocomplete="off"><br>
+                        </label>
+                </div>
+
+                <div id="fav-cor">
+                    <label for="cor">Cor Favorita:</label>
+                    <input type="color" name="cor" id="cor">
+                    <br>
+                </div>
+
+                <div id="sex">
+                    <label for="sex-title"><span id="sex-title">Sexo</span></label>
+                        
+                    <label for="masculino">Masculino
+                        <input type="radio" name="masculino" id="masculino" value="jedi" checked>
+                    </label>
+                        
+                    <label for="feminino">Feminino
+                        <input type="radio" name="feminino" id="feminino" value="sith" >
+                    </label>
+
+                    <label for="outros">Outros
+                        <input type="radio" name="outros" id="outros" value="outros" >
+                    </label>
+                </div>
+
+                <div id="eula">
+                    <label for="eula-title"><span id="eula-title">Aceito os Termos</span></label>
+                    <label for="eula-sim">Sim
+                        <input type="radio" name="eula-sim" id="eula-sim" value="eula-sim" checked>
+                    </label>
+                    <label for="eula-nao">Não
+                        <input type="radio" name="eula-nao" id="eula-nao" value="eula-nao" >
+                    </label>
+                </div>
+
+                <div id="user-feedback">
+                    <label for="feedback-title"><p id="feedback-title">Escreva um resumo sobre você</p></label>
+                    <label for="feedback">
+                            <textarea id="feedback" rows="4" cols="40" placeholder="Conte-nos um pouco sobre você em até 280 caracteres" required autocomplete="off"></textarea>
+                    </label>
+                </div>
+
+                <br>
+                <input type="submit" value="Enviar" id="submit">
+                <br>
+                <br>
+                
+            </form>
+
+        </div>
+
+    </body>
+</html>
